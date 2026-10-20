@@ -1,0 +1,27 @@
+{
+  "name": "sales-copilot-fresh",
+  "productName": "Sales Copilot Fresh",
+  "version": "1.0.27",
+  "private": true,
+  "description": "Practice, simulation demos and live speakerphone coaching. One OpenAI key.",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.js",
+    "test:ui": "playwright test",
+    "package": "node scripts/package.js",
+    "eval:behavior": "node scripts/evaluate.js",
+    "eval:preview": "node scripts/evaluate.js --preview",
+    "corpus:check": "node scripts/check-corpus.js"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@playwright/test": "1.63.0",
+    "electron": "44.4.5",
+    "happy-dom": "20.14.5"
+  },
+  "dependencies": {
+    "ws": "8.22.0"
+  }
+}

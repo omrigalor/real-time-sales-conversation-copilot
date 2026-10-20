@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "purpose": "Buyer perspective and difficulty comparison; development only; never training data.",
+  "cases": [
+    {
+      "id": "busy-executive",
+      "title": "Busy executive, not a high-difficulty sales examiner",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "VP Customer Experience",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "BDR unexpected outbound",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The executive is between meetings with little attention, knows high-level complaints but not integrations, and has not invited a product presentation."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The executive personally wants to get to the next meeting; the seller's training success is irrelevant."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "I have a moment, then I need to go."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Omri from Salesforce. I wondered whether order-related service work is something your team wants to improve."
+          }
+        ]
+      },
+      "manual_review": "Look for ordinary brief engagement or low interest rather than a sophisticated sequence of proof requests. High difficulty must not increase technical knowledge or turn time pressure into a paragraph of useful discovery. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "pain-without-cause",
+      "title": "Real problem, root cause unknown",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "VP Customer Experience",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE scheduled discovery",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The executive has heard repeated complaints about long delivery investigations and cares about guest frustration."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The executive has not traced the process and does not know which system, team or handoff causes the delay. No exact impact baseline is available."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Those delivery calls do seem to take longer than they should."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "What is making them take so long?"
+          }
+        ]
+      },
+      "manual_review": "Can the buyer care about a problem without diagnosing it? Missing root-cause knowledge should remain missing rather than becoming integration expertise or an ideal review agenda. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "cause-without-priority",
+      "title": "Knows the cause, does not prioritize fixing it",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "Service Operations Manager",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE follow-up discussion",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The manager knows a manual carrier-portal lookup is needed for occasional exceptional shipments."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The lookup is infrequent, has an accepted workaround and is not currently a meaningful priority. This lack of priority is established at all difficulty levels."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "For those unusual shipments, we look in the carrier portal."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "That sounds like something worth fixing. Would it help if it were all in one place?"
+          }
+        ]
+      },
+      "manual_review": "Knowledge of a workflow must not become willingness to buy. Easy can be polite and cooperative without inventing urgency; Hard need not ask an elegant ROI challenge. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "practical-self-interest",
+      "title": "Buyer concern is their own workload",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "Customer Support Director",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE solution exploration",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The director has capacity constraints because managers are supporting a seasonal staffing ramp."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The proposed review is vaguely described and the director does not know what work their team would have to do. They want to avoid a time-consuming project."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "We could do a workflow review with your team."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "We are pretty stretched right now."
+          },
+          {
+            "id": "t2",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "It would help us understand the situation."
+          }
+        ]
+      },
+      "manual_review": "Does the reply come from capacity and effort on the buyer's side? A practical concern is appropriate; an invitation to deliver the perfect value proposition is not required. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "partial-answer",
+      "title": "Buyer answers part of a compound question",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "Service Team Manager",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE scheduled discovery",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The manager directly handles delivery exceptions but does not maintain a case-volume report."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The manager has limited attention during this exchange and has not investigated financial consequences."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "What do agents check, how often does that happen, and what does it cost you?"
+          }
+        ]
+      },
+      "manual_review": "An incomplete answer is valid. Does the buyer avoid conveniently filling workflow, frequency and financial impact together? Do not impose a universal brevity rule. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "knowledge-boundary",
+      "title": "Budget question outside the buyer's knowledge",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "Customer Service Supervisor",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE workflow discussion",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The supervisor knows day-to-day case handling and has no access to budget decisions or procurement plans."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The supervisor does not know whether spending for this type of work has been approved and has no ready referral arranged."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Is there budget allocated to improve this?"
+          }
+        ]
+      },
+      "manual_review": "Does the buyer admit the actual knowledge gap without inventing a number, volunteering an ideal sponsor, or constructing a qualification workaround? Difficulty must not supply missing knowledge. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "no-volunteered-escalation",
+      "title": "Stakeholder exists without an invitation",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "VP Guest Experience",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "BDR unexpected outbound",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The VP knows the service-operations lead owns the daily workflow, but has not decided that this conversation is useful."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The VP has not offered an introduction, a meeting or their own attendance. The issue is only a loosely described annoyance."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Someone in ops would know the details better than I do."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Understood. I do not yet know whether this matters enough to look at."
+          }
+        ]
+      },
+      "manual_review": "The buyer need not reward restraint with the ideal stakeholder and next-step plan. Referral can occur only if their actual motivation supports it, not because the seller needs progression. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "no-proof-checklist",
+      "title": "Uncertain interest, no ready proof checklist",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "VP Customer Experience",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "BDR unexpected outbound",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The buyer is mildly curious but has not identified a priority, buying criteria or a specific question they need answered."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "They are unsure whether this is worth attention and would not naturally know exactly what evidence would justify a meeting."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Maybe send me something."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "I can send a short note about the idea."
+          }
+        ]
+      },
+      "manual_review": "Can the buyer leave the request simple rather than specifying the ideal metrics, attendees, technical proof and route to a meeting? Do not invent exact persuasion conditions. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "legitimate-sharp-question",
+      "title": "Counterexample: motivated technical scrutiny",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "Director of Enterprise Applications",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE technical evaluation",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The director personally owns identity and access architecture and understands permission boundaries."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "Their specific concern is preserving record-level access for third-party lookups. They genuinely need to understand whether the proposal respects that boundary."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Our agents do not all have access to the same records."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "The new workflow would make the order information available to agents."
+          }
+        ]
+      },
+      "manual_review": "A sharp permissions question is natural here. Anti-coach guidance must not suppress real expertise or make an engaged technical buyer evasive merely because difficulty is high. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    },
+    {
+      "id": "earned-commitment",
+      "title": "Counterexample: genuine interest and agreed follow-up",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "trainingMode": "assisted",
+        "context": "Fictional buyer-only evaluation. Same known facts and transcript at each level; vary only unspecified commercial conditions.",
+        "accountContext": {
+          "company": "Arden Group (fictional evaluation account)",
+          "person": "Nia Patel (fictional)",
+          "buyerRole": "Service Operations Director",
+          "industry": "Retail",
+          "relationship": "Existing Salesforce customer within this fictional exercise",
+          "products": "Service Cloud in this fictional exercise",
+          "callType": "AE next-step discussion",
+          "objective": "Seller goal is intentionally excluded from buyer context",
+          "notes": "Development-only fixture, never added to the account library.",
+          "entries": [
+            {
+              "id": "known-0",
+              "kind": "user",
+              "text": "The director has personally described a consequential workflow problem and explicitly agreed to a narrow follow-up with their team."
+            },
+            {
+              "id": "known-1",
+              "kind": "user",
+              "text": "The purpose, attendees and time window were settled in the conversation; no new issue has emerged."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "That review would be useful. Send the invite for Tuesday and I will bring our operations lead."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Great. I will send the invite and a short outline today."
+          }
+        ]
+      },
+      "manual_review": "Preserve the actual agreement and allow a natural close at every level. Hard must not invent new resistance, and helpful cooperation is not automatically coach leakage when motivated by a real need. Compare levels 1, 3 and 5: commercial willingness/attention/disclosure may differ; knowledge and factual constraints must not. Do not grade by matching any exact phrase."
+    }
+  ]
+}

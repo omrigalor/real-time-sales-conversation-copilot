@@ -1,0 +1,34 @@
+[
+  {
+    "speaker": "seller",
+    "text": "Hi Rachel, Omri from Salesforce. I wanted to understand your current customer service strategy and some of the challenges you're experiencing."
+  },
+  {
+    "speaker": "buyer",
+    "text": "I'm about to head into a meeting. What's this regarding?"
+  },
+  {
+    "speaker": "seller",
+    "text": "Absolutely, I completely understand. I was hoping to understand how your agents currently handle service requests and whether there are any inefficiencies in your existing workflows. What would you say are the biggest pain points facing your customer service organization today?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "I really don't have time for this."
+  },
+  {
+    "speaker": "seller",
+    "text": "Totally understand. Just one quick question. Are your biggest challenges related more to agent productivity, customer satisfaction, data integration, or automation?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Can you just send me something?"
+  },
+  {
+    "speaker": "seller",
+    "text": "Of course. To make sure what I send is relevant, could you tell me which of those areas is most important?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "I have to go."
+  }
+]

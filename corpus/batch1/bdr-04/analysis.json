@@ -1,0 +1,67 @@
+{
+  "analyst": "Codex qualitative analysis; not an API evaluation",
+  "turns": [
+    {
+      "turn": 0,
+      "context": "No attention or relevance established",
+      "seller_objective": "Begin discovery",
+      "buyer_signal": "No attention or relevance established",
+      "possible_moves": [
+        "Establish reason",
+        "ask permission",
+        "brief hypothesis"
+      ],
+      "chosen_move": "Broad strategy question",
+      "buyer_reaction": "Buyer flags imminent meeting",
+      "lesson": "Diagnostic burden precedes buyer reason to engage.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 2,
+      "context": "Buyer explicitly rushed",
+      "seller_objective": "Continue discovery",
+      "buyer_signal": "Buyer explicitly rushed",
+      "possible_moves": [
+        "Brief relevance",
+        "email",
+        "exit"
+      ],
+      "chosen_move": "Long acknowledgment and broad question",
+      "buyer_reaction": "Buyer repeats lack of time",
+      "lesson": "Acknowledgment without behavioral adaptation is ineffective.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 4,
+      "context": "Buyer again refuses time",
+      "seller_objective": "Categorize pain",
+      "buyer_signal": "Buyer again refuses time",
+      "possible_moves": [
+        "Stop",
+        "send relevant note if welcome"
+      ],
+      "chosen_move": "Multiple-choice qualification",
+      "buyer_reaction": "Buyer requests email",
+      "lesson": "Resistance is met with more work, not relief.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 6,
+      "context": "Email request after repeated time constraints",
+      "seller_objective": "Collect targeting data",
+      "buyer_signal": "Email request after repeated time constraints",
+      "possible_moves": [
+        "Accept and end",
+        "use known context"
+      ],
+      "chosen_move": "Another discovery question",
+      "buyer_reaction": "Buyer leaves",
+      "lesson": "Relevance cannot justify ignoring an exit signal.",
+      "confidence": "low: illustrative, synthetic"
+    }
+  ],
+  "limitations": [
+    "One constructed failure; cannot isolate phrase, question length and relevance effects.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ]
+}

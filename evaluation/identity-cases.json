@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "unexpected-first-name-only",
+      "title": "Unexpected caller gives only a first name",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Development-only caller-knowledge boundary probe.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hello, Maya speaking."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Hi Maya, Jordan here. How are you?"
+          }
+        ]
+      },
+      "manual_review": "Does the buyer avoid assuming employer, purpose or familiarity? Natural clarification is appropriate; no exact wording is required."
+    },
+    {
+      "id": "unexpected-attention-request",
+      "title": "Unexpected caller asks only for a little attention",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Development-only caller-knowledge boundary probe.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hello, Maya speaking."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Jordan from Salesforce. I know this is unexpected. Could I briefly explain why I called?"
+          }
+        ]
+      },
+      "manual_review": "Does the buyer respond to availability or curiosity without volunteering workflow, cost metrics and stakeholders together?"
+    },
+    {
+      "id": "scheduled-purpose-known",
+      "title": "Scheduled meeting already establishes who is calling",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "scenarioId": "ae-discovery",
+        "context": "Development-only caller-knowledge boundary probe.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hi Jordan, good to meet you for the Salesforce workflow discussion we booked."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Likewise. What would make this conversation useful for you?"
+          }
+        ]
+      },
+      "manual_review": "Does the buyer use the established invitation and respond naturally rather than insisting on another identity or permission check?"
+    }
+  ]
+}

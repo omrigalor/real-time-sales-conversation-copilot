@@ -1,0 +1,9 @@
+# Corpus → analysis → distilled references
+
+Batch 1 contains six user-provided synthetic BDR conversations, not scraped or verified real calls. `batch1/bdr-*/metadata.json` stores provenance and known/unknown context; `dialogue.json` stores seller/buyer turns separately; `analysis.json` annotates each seller move with available context, objective, buyer signal, alternatives, chosen move, reaction, lesson and qualitative confidence.
+
+`batch1/DISTILLATION.md` compares all six, including the disengaged buyer and good-selling/no-meeting case. `knowledge/bdr-batch1.json` contains only the five qualified, cross-example principles used in the app. Its `enabled` switch makes the addition reversible. The universal, BDR and AE editorial libraries remain separate; their original guidance is explicitly not claimed as corpus-derived evidence. No raw dialogue is bundled in the installed app or placed in coaching prompts. Buyer simulation receives neither these principles nor coaching objectives.
+
+Run `npm run corpus:check` to validate required metadata, annotation coverage and comparative principle references. Future batches should use the same separate-file structure. Preserve unknown fields as null, keep source type and outcome scope explicit, analyze the available information at each turn, and record reasonable alternatives. Promotion is a reviewed edit to the relevant knowledge JSON, never an automatic conversion of examples into rules. Do not promote a single successful phrase, synthetic outcomes as empirical wins, or unverified causal conclusions. Collect broader evidence before increasing confidence.
+
+Holdout cases in `evaluation/` are not part of this corpus. Do not feed their reviewer notes or model outputs back into the library. Batch 2 is deliberately not incorporated before Batch 1's actual outputs are inspected.

@@ -1,0 +1,19 @@
+{
+  "kind": "editorial_seed",
+  "role": "universal",
+  "limitations": "User-specified judgment principles, not empirical transcript findings. Context overrides heuristics.",
+  "principles": [
+    {
+      "id": "current-context",
+      "principle": "Reason from the current exchange before role expectations or historical patterns; distinguish facts from hypotheses."
+    },
+    {
+      "id": "natural-move",
+      "principle": "Choose the smallest useful next move, including a statement, direct answer, hypothesis, silence or question. Adapt length to the moment."
+    },
+    {
+      "id": "earned-progress",
+      "principle": "Follow the buyer\u2019s thread and respect commitments already made. Advancing, slowing down or ending can each be appropriate."
+    }
+  ]
+}

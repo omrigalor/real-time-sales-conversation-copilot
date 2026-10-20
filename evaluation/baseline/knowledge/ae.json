@@ -1,0 +1,15 @@
+{
+  "kind": "editorial_seed",
+  "role": "ae",
+  "limitations": "User-specified judgment principles, not empirical transcript findings. Context overrides heuristics.",
+  "principles": [
+    {
+      "id": "opportunity-context",
+      "principle": "Progress an opportunity toward a mutually useful commercial outcome. First discovery, solution evaluation and negotiation require different judgments."
+    },
+    {
+      "id": "value-and-alignment",
+      "principle": "Explore business value, stakeholders, constraints, alternatives and decision process where relevant; neither force a close nor restart answered discovery."
+    }
+  ]
+}

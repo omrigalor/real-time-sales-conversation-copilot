@@ -1,0 +1,54 @@
+[
+  {
+    "speaker": "seller",
+    "text": "Hey Maya, Omri with Salesforce. Calling out of the blue. Have I caught you with 30 seconds?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Literally about 30 seconds. I'm walking into something."
+  },
+  {
+    "speaker": "seller",
+    "text": "I'll be quick. I noticed your team has been talking publicly about lowering service costs while order volume keeps growing. We work with retail teams dealing with that exact tension. I had a hypothesis about where some of the service load might be coming from."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Okay. What's the hypothesis?"
+  },
+  {
+    "speaker": "seller",
+    "text": "A lot of the expensive contacts aren't complicated cases. They're agents spending time finding information across order, delivery, and service systems before they can answer the customer. Is that completely off for you?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "No, that's definitely a thing. I'm not sure it's our biggest problem, though."
+  },
+  {
+    "speaker": "seller",
+    "text": "Fair. I wouldn't assume it is. What I was hoping to figure out is whether it's worth fifteen minutes with the team that owns that workflow. If it isn't material, we stop there."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Who would you want involved?"
+  },
+  {
+    "speaker": "seller",
+    "text": "Probably whoever owns service operations and whoever owns the order workflow. I'd bring someone from our side who can actually map where the friction might be instead of giving you a generic product tour."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Send me something first."
+  },
+  {
+    "speaker": "seller",
+    "text": "Happy to. Rather than send the Salesforce encyclopedia, I'll send you three bullets on the hypothesis. If it looks relevant, would you be opposed to finding twenty minutes next week?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "That's fine."
+  },
+  {
+    "speaker": "seller",
+    "text": "Perfect. I'll keep it short."
+  }
+]

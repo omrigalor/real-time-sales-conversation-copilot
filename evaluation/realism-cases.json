@@ -1,0 +1,1619 @@
+{
+  "version": 4,
+  "cases": [
+    {
+      "id": "rushed-behavior",
+      "title": "Rushed buyer shows time pressure in the answer",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I am leaving for a meeting in a minute."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Where does the delivery process get difficult?"
+          }
+        ]
+      },
+      "manual_review": "Does attention/disclosure reflect being rushed, without a fixed word limit or a polished full workflow diagnosis?"
+    },
+    {
+      "id": "vague-is-enough",
+      "title": "Buyer can give a short, vague answer",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Do those occasional order checks actually bother your team?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Not sure it is a big thing."
+          },
+          {
+            "id": "t2",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "What is your impression, without getting into the details?"
+          }
+        ]
+      },
+      "manual_review": "Can uncertainty remain tentative and brief, without escalating pain or supplying a business case?"
+    },
+    {
+      "id": "unknown-stays-unknown",
+      "title": "Buyer does not have an operational metric",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I do not track handling time; it is not part of my role."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "How many minutes does each case lose?"
+          }
+        ]
+      },
+      "manual_review": "Does the buyer preserve their knowledge limit without inventing numbers or always volunteering a stakeholder and meeting?"
+    },
+    {
+      "id": "partial-information",
+      "title": "Buyer need not answer every part of an overloaded question",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I have a moment."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "What systems do you use, how often does it happen, what does it cost, who owns it and when do you need to fix it?"
+          }
+        ]
+      },
+      "manual_review": "Does the buyer respond plausibly to the burden rather than filling every discovery category? No prescribed number of facts."
+    },
+    {
+      "id": "resist-detail",
+      "title": "Busy executive resists detailed workflow interrogation",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Our operations people handle the day-to-day. I only have a minute."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Could you take me through every screen an agent opens for an order exception?"
+          }
+        ]
+      },
+      "manual_review": "Does role and time pressure shape the answer, without a consultancy paragraph or forced referral?"
+    },
+    {
+      "id": "email-no-playbook",
+      "title": "Buyer wants an email, not to plan the sellers process",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I cannot get into it now. Email me the idea."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "A short note on the hypothesis, then you can decide if it deserves a conversation?"
+          }
+        ]
+      },
+      "manual_review": "Can the buyer accept, clarify or decline simply without laying out routing, attendees and conditions for an ideal sales meeting?"
+    },
+    {
+      "id": "earned-followup-end",
+      "title": "Rushed buyer has agreed to review a short note",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Email address already confirmed. Cold outbound; buyer has not agreed to a meeting.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I can send a short outline to the email you confirmed."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Yes, send it. I will read it when I get a chance. I really do have to go."
+          }
+        ]
+      },
+      "manual_review": "Does the seller close naturally instead of another useful-but-unnecessary question or reconfirming permission?"
+    },
+    {
+      "id": "clean-reflection",
+      "title": "Avoid unnecessary paraphrase before the next move",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "The order system works fine. It is the occasional carrier exception that gets messy."
+          }
+        ]
+      },
+      "manual_review": "Does the line advance one useful thought in ordinary speech rather than restate everything with elaborate thanks?"
+    },
+    {
+      "id": "source-not-invented",
+      "title": "Public research cannot become an invented internal analysis",
+      "kind": "opening",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Cold outbound. Public company earnings release reports digital growth. No internal Salesforce study, finance analysis or colleague input exists.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hello?"
+          }
+        ]
+      },
+      "manual_review": "Does the seller avoid fictional finance teams, research or benchmarks? Use only the supplied source and proportionate opening effort."
+    },
+    {
+      "id": "lookup-not-solution-fit",
+      "title": "External lookup alone does not establish product value",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Sometimes we look in another system, but that is normal and it is pretty quick."
+          }
+        ]
+      },
+      "manual_review": "Does the seller avoid promising that Service Cloud will remove lookups, save money or solve a meaningful pain that was not established?"
+    },
+    {
+      "id": "engaged-buyer-depth",
+      "title": "Engaged scheduled buyer can still explain substantively",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "scenarioId": "ae-discovery",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I booked this because our recurring returns issue needs attention. We have time to go through it."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Walk me through what actually happens on one of those returns."
+          }
+        ]
+      },
+      "manual_review": "Counterexample: do not make all buyers terse or evasive. Appropriate engaged detail remains possible."
+    },
+    {
+      "id": "earned-fast-advance",
+      "title": "Buyer explicitly invites stakeholder follow-up",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "That is exactly the problem we need to address. I want our service lead in the next conversation. Can you send us times for Thursday?"
+          }
+        ]
+      },
+      "manual_review": "Counterexample: accept warranted progression rather than manufacturing more discovery or resistance."
+    },
+    {
+      "id": "continue-after-greeting-speakerphone-assisted",
+      "title": "Continue after introduction: speakerphone / assisted",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "trainingMode": "assisted",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "b0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi, David speaking."
+          },
+          {
+            "id": "s1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it’s Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "b2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi Omri. I can give you maybe a minute, but I’m in the middle of other work. What’s this about, specifically?"
+          }
+        ],
+        "accountContext": {
+          "company": "Pandora",
+          "person": "David",
+          "relationship": "Existing Salesforce customer",
+          "callType": "Cold outbound",
+          "notes": "Existing automation reportedly reduced historical support queues. Whether any meaningful manual workload remains is a hypothesis, not established current pain."
+        }
+      },
+      "manual_review": "SAY a concise grounded reason for calling directly. No second greeting, identity repetition, renewed permission request, or broad survey of gaps. Do not present remaining manual work as a confirmed problem. Wording is flexible."
+    },
+    {
+      "id": "continue-after-greeting-simulation-assisted",
+      "title": "Continue after introduction: simulation / assisted",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "assisted",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "b0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi, David speaking."
+          },
+          {
+            "id": "s1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it’s Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "b2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi Omri. I can give you maybe a minute, but I’m in the middle of other work. What’s this about, specifically?"
+          }
+        ],
+        "accountContext": {
+          "company": "Pandora",
+          "person": "David",
+          "relationship": "Existing Salesforce customer",
+          "callType": "Cold outbound",
+          "notes": "Existing automation reportedly reduced historical support queues. Whether any meaningful manual workload remains is a hypothesis, not established current pain."
+        }
+      },
+      "manual_review": "SAY a concise grounded reason for calling directly. No second greeting, identity repetition, renewed permission request, or broad survey of gaps. Do not present remaining manual work as a confirmed problem. Wording is flexible."
+    },
+    {
+      "id": "continue-after-greeting-simulation-blind",
+      "title": "Continue after introduction: simulation / blind",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "blind",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "b0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi, David speaking."
+          },
+          {
+            "id": "s1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it’s Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "b2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi Omri. I can give you maybe a minute, but I’m in the middle of other work. What’s this about, specifically?"
+          }
+        ],
+        "accountContext": {
+          "company": "Pandora",
+          "person": "David",
+          "relationship": "Existing Salesforce customer",
+          "callType": "Cold outbound",
+          "notes": "Existing automation reportedly reduced historical support queues. Whether any meaningful manual workload remains is a hypothesis, not established current pain."
+        }
+      },
+      "manual_review": "SAY a concise grounded reason for calling directly. No second greeting, identity repetition, renewed permission request, or broad survey of gaps. Do not present remaining manual work as a confirmed problem. Wording is flexible."
+    },
+    {
+      "id": "continue-after-greeting-simulation-demo",
+      "title": "Continue after introduction: simulation / demo",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "demo",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "b0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi, David speaking."
+          },
+          {
+            "id": "s1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it’s Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "b2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi Omri. I can give you maybe a minute, but I’m in the middle of other work. What’s this about, specifically?"
+          }
+        ],
+        "accountContext": {
+          "company": "Pandora",
+          "person": "David",
+          "relationship": "Existing Salesforce customer",
+          "callType": "Cold outbound",
+          "notes": "Existing automation reportedly reduced historical support queues. Whether any meaningful manual workload remains is a hypothesis, not established current pain."
+        }
+      },
+      "manual_review": "SAY a concise grounded reason for calling directly. No second greeting, identity repetition, renewed permission request, or broad survey of gaps. Do not present remaining manual work as a confirmed problem. Wording is flexible."
+    },
+    {
+      "id": "continue-after-greeting-simulation-observe",
+      "title": "Continue after introduction: simulation / observe",
+      "kind": "observe",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "observe",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "b0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi, David speaking."
+          },
+          {
+            "id": "s1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it’s Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "b2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi Omri. I can give you maybe a minute, but I’m in the middle of other work. What’s this about, specifically?"
+          }
+        ],
+        "accountContext": {
+          "company": "Pandora",
+          "person": "David",
+          "relationship": "Existing Salesforce customer",
+          "callType": "Cold outbound",
+          "notes": "Existing automation reportedly reduced historical support queues. Whether any meaningful manual workload remains is a hypothesis, not established current pain."
+        }
+      },
+      "manual_review": "SAY a concise grounded reason for calling directly. No second greeting, identity repetition, renewed permission request, or broad survey of gaps. Do not present remaining manual work as a confirmed problem. Wording is flexible."
+    },
+    {
+      "id": "new-participant-greeting",
+      "title": "A new participant joins an AE discovery call",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "turns": [
+          {
+            "id": "s0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi David, good to meet you. What would make this discussion useful?"
+          },
+          {
+            "id": "b1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Before we begin, Elena from operations just joined. You two have not met."
+          }
+        ],
+        "accountContext": {
+          "callType": "Scheduled discovery"
+        }
+      },
+      "manual_review": "A brief greeting to the newly joined Elena is natural. The continuity principle must not become a blanket greeting ban or turn this into a cold opening."
+    },
+    {
+      "id": "lifecycle-agreed-close",
+      "title": "Agreed action, confirmation and buyer farewell",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Send me a short overview first."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I will send it this afternoon."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Thanks, that is all I need for now. Goodbye."
+          }
+        ]
+      },
+      "manual_review": "ENDED with an exact buyer quote; no sales-success grading or invented next meeting."
+    },
+    {
+      "id": "lifecycle-buyer-leaves",
+      "title": "Buyer ends an unproductive call",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Could I ask about another team?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "No, I need to get back to work. That is all for today. Goodbye."
+          }
+        ]
+      },
+      "manual_review": "ENDED even though no sale was achieved."
+    },
+    {
+      "id": "lifecycle-repeat-meaning",
+      "title": "Different words repeat an already agreed commitment",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Send the overview."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I will email that over this afternoon."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Fine, thank you."
+          },
+          {
+            "id": "t3",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "The summary will be in your inbox later today."
+          }
+        ]
+      },
+      "manual_review": "CLOSING; semantic repetition true with two seller quotes and buyer agreement. Do not generate an additional long substantive reply."
+    },
+    {
+      "id": "lifecycle-new-question",
+      "title": "An important new question reopens a closing exchange",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Send the overview."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Will do."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Actually, before you go, is the feature included in our existing license?"
+          }
+        ]
+      },
+      "manual_review": "ACTIVE; the buyer is asking a real unanswered question, not ending."
+    },
+    {
+      "id": "lifecycle-email-request-only",
+      "title": "An email request alone does not hang up the call",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Could we discuss the workflow?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Please send me something first."
+          }
+        ]
+      },
+      "manual_review": "CLOSING or ACTIVE; not ENDED. Give seller a chance to confirm."
+    },
+    {
+      "id": "seller-close-not-reconfirm",
+      "title": "Seller should finish instead of repeating the commitment",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Send the brief overview first."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I will send it this afternoon."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Okay, thanks. That is all I need."
+          }
+        ]
+      },
+      "manual_review": "Short natural goodbye or HOLD if buyer is already ending. No repeated inventory, new question, or proposed meeting."
+    },
+    {
+      "id": "engaged-cautious-followup",
+      "title": "Substantive interest with implementation caution",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Those requests keep the team late twice a week. We do want to address that."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "We could look at the handoff before suggesting any changes."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I would want our operations manager involved. How much effort would that review take?"
+          }
+        ]
+      },
+      "manual_review": "Answer the effort question without inventing a commitment; consider a focused follow-up with a concrete purpose. Email is not an automatic escape. No mandatory meeting wording."
+    },
+    {
+      "id": "explicit-email-first-respected",
+      "title": "Buyer explicitly prefers material before a call",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I am interested, but send the overview first. I do not want to book time yet."
+          }
+        ]
+      },
+      "manual_review": "Respect email-first. Do not demand a meeting to receive material."
+    },
+    {
+      "id": "mild-pain-no-product-stack",
+      "title": "Mild workflow friction is not validated product fit",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Occasionally we check a separate screen, but it is not a big issue. I do not know how it connects."
+          }
+        ]
+      },
+      "manual_review": "No automatic Agentforce/MuleSoft pitch or promised savings; clarify relevance proportionately or accept weak pain."
+    },
+    {
+      "id": "implementation-effort-unknown",
+      "title": "Implementation effort is unknown",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Would connecting it to our order system be quick? You have not seen our architecture yet."
+          }
+        ]
+      },
+      "manual_review": "Do not promise minimal lift, easy integration or out-of-box support. Explain that effort depends on actual systems/permissions/policy and can be validated."
+    },
+    {
+      "id": "specific-reason-after-permission",
+      "title": "Contribute a modest hypothesis after permission",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it is Alex from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I have a minute. What is this about?"
+          }
+        ],
+        "accountContext": {
+          "company": "Arden",
+          "person": "Nia",
+          "notes": "Prior call: routing improvements reduced the queue. We have not established whether exception handling still consumes material time.",
+          "callType": "Cold outbound"
+        }
+      },
+      "manual_review": "No second greeting or whole-business efficiency survey. Use supplied research as historical evidence, remaining pain as unconfirmed hypothesis."
+    },
+    {
+      "id": "buyer-one-practical-concern",
+      "title": "Buyer asks from own concern rather than a complete sales rubric",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Our automation could make order adjustments easier with minimal change to your systems."
+          }
+        ],
+        "buyerFacts": [
+          "You own customer support, not IT. You worry about customer mistakes and have little appetite for extra projects."
+        ],
+        "accountContext": {
+          "company": "Arden",
+          "person": "Nia",
+          "buyerRole": "VP Customer Experience",
+          "callType": "Cold outbound"
+        }
+      },
+      "manual_review": "A practical doubt or focused question is plausible. No comprehensive list of guardrails, integrations, policy, risk, stakeholders and ideal follow-up conditions."
+    },
+    {
+      "id": "buyer-rushed-after-disclosure",
+      "title": "Stated time pressure affects the actual reply",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I have about a minute before my next meeting."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Can you explain the workflow, root cause, frequency, business impact and who approves changes?"
+          }
+        ],
+        "difficulty": 5,
+        "accountContext": {
+          "company": "Arden",
+          "person": "Nia",
+          "buyerRole": "VP Customer Experience",
+          "callType": "Cold outbound"
+        }
+      },
+      "manual_review": "Do not supply a structured essay or full discovery inventory. Brief partial answer, limited knowledge or reluctance is plausible; avoid universal refusal."
+    },
+    {
+      "id": "buyer-repeated-commitment-close",
+      "title": "Repeated commitment requires no new paragraph",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "trainingMode": "assisted",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Send the overview."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I will email it this afternoon."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Okay, thanks."
+          },
+          {
+            "id": "t3",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "You will have the summary in your inbox later today."
+          }
+        ],
+        "accountContext": {
+          "company": "Arden",
+          "person": "Nia",
+          "callType": "Cold outbound"
+        }
+      },
+      "manual_review": "Brief acknowledgment or goodbye; no new list of requirements or repeated full next-step instructions."
+    },
+    {
+      "id": "persistence-soft-live",
+      "title": "First email brush-off permits one concise relevance attempt",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I'm busy. If this is relevant, email me."
+          }
+        ]
+      },
+      "manual_review": "One concise grounded relevance attempt; no immediate offer of email, long pitch, multiple questions, unsupported customer pattern or meeting with no reason. Preserve rep-only coaching."
+    },
+    {
+      "id": "persistence-soft-assisted",
+      "title": "First email brush-off permits one concise relevance attempt",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I'm busy. If this is relevant, email me."
+          }
+        ],
+        "trainingMode": "assisted"
+      },
+      "manual_review": "One concise grounded relevance attempt; no immediate offer of email, long pitch, multiple questions, unsupported customer pattern or meeting with no reason. Preserve rep-only coaching."
+    },
+    {
+      "id": "persistence-soft-blind",
+      "title": "First email brush-off permits one concise relevance attempt",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I'm busy. If this is relevant, email me."
+          }
+        ],
+        "trainingMode": "blind"
+      },
+      "manual_review": "One concise grounded relevance attempt; no immediate offer of email, long pitch, multiple questions, unsupported customer pattern or meeting with no reason. Preserve rep-only coaching."
+    },
+    {
+      "id": "persistence-soft-demo",
+      "title": "First email brush-off permits one concise relevance attempt",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I'm busy. If this is relevant, email me."
+          }
+        ],
+        "trainingMode": "demo"
+      },
+      "manual_review": "One concise grounded relevance attempt; no immediate offer of email, long pitch, multiple questions, unsupported customer pattern or meeting with no reason. Preserve rep-only coaching."
+    },
+    {
+      "id": "persistence-soft-observe",
+      "title": "First email brush-off permits one concise relevance attempt",
+      "kind": "observe",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I'm busy. If this is relevant, email me."
+          }
+        ],
+        "trainingMode": "observe"
+      },
+      "manual_review": "One concise grounded relevance attempt; no immediate offer of email, long pitch, multiple questions, unsupported customer pattern or meeting with no reason. Preserve rep-only coaching."
+    },
+    {
+      "id": "persistence-investment",
+      "title": "Existing investment and conditional openness",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "We invested a lot in what we have. I'm not starting another project without a clear reason."
+          }
+        ]
+      },
+      "manual_review": "Acknowledge installed investment as a constraint, offer a narrow test of relevance; do not surrender, presume a gap or promise an easy extension."
+    },
+    {
+      "id": "persistence-earned-meeting",
+      "title": "A material need and interest warrant a live next step",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Exceptions still keep three people busy each morning, and reducing that is a priority."
+          },
+          {
+            "id": "t2",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "We could explore whether the existing service automation can cover those requests, subject to your policies."
+          },
+          {
+            "id": "t3",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "That could be useful. How would we check it?"
+          }
+        ]
+      },
+      "manual_review": "Recommend a focused qualified discovery/specialist meeting with a concrete purpose. No automatic email or generic demo."
+    },
+    {
+      "id": "persistence-meeting-concern",
+      "title": "One reasonable response to a meeting concern",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Manual re-entry is slowing us down and I want to fix that."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Would a short session with your operations lead help us check which requests can be handled differently?"
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I don't want a generic product demo."
+          }
+        ]
+      },
+      "manual_review": "Address the concrete concern once: focus the session on this workflow, without promising implementation ease or repeating the same unsupported ask."
+    },
+    {
+      "id": "persistence-renewed-refusal",
+      "title": "Respect refusal after the relevance attempt",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Just email me."
+          },
+          {
+            "id": "t2",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Could I ask one quick thing first: are order exceptions still taking time away from your team?"
+          },
+          {
+            "id": "t3",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "No questions now. Email only, please."
+          }
+        ]
+      },
+      "manual_review": "Accept the firm email boundary and close; no new relevance attempt, pressure or meeting ask."
+    },
+    {
+      "id": "persistence-hard-no",
+      "title": "An immediate clear stop outranks persistence",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "No. Stop calling me and don't send me anything."
+          }
+        ]
+      },
+      "manual_review": "Briefly acknowledge and close. No question, email offer or meeting."
+    },
+    {
+      "id": "persistence-departure",
+      "title": "A genuine immediate departure is not an objection exercise",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I have to get off the phone right now. Goodbye."
+          }
+        ]
+      },
+      "manual_review": "End politely; no attempt to prolong a clear departure."
+    },
+    {
+      "id": "persistence-settled-email",
+      "title": "Do not reopen an email commitment already settled",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Send the short summary first."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I'll send it today. Thanks for your time."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Thanks, goodbye."
+          }
+        ]
+      },
+      "manual_review": "Close, do not reinterpret an acknowledged agreement as an unused sales opportunity."
+    },
+    {
+      "id": "persistence-ae-evaluation",
+      "title": "AE persistence respects current opportunity stage",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "We like the approach, but IT won't accept another vague demo. Send the security detail."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "We can provide the documented controls."
+          },
+          {
+            "id": "t2",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "We still need to understand how access would work in our environment."
+          }
+        ]
+      },
+      "manual_review": "Answer known details; consider a focused technical validation discussion with IT. Do not reset to generic BDR questions, invent security assurances or reflexively email and exit."
+    },
+    {
+      "id": "persistence-attempt-memory",
+      "title": "An older relevance attempt is not reset by the transcript window",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "As I said, email only. I don't want more questions."
+          }
+        ],
+        "conversationMemory": {
+          "objection_attempts": [
+            {
+              "id": "time",
+              "kind": "relevance",
+              "concern": "Initial email brush-off",
+              "quote": "Could I ask one quick question first?",
+              "turnId": "older-seller"
+            }
+          ]
+        }
+      },
+      "manual_review": "The previous relevance attempt is recorded outside the recent transcript. Respect the renewed refusal; do not spend the one-attempt allowance again."
+    },
+    {
+      "id": "persistence-lifecycle-soft",
+      "title": "Lifecycle respects the actual boundary",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I'm busy. If this is relevant, email me."
+          }
+        ]
+      },
+      "manual_review": "Expected active. Use conversational intent and exact buyer evidence; do not grade sales performance."
+    },
+    {
+      "id": "persistence-lifecycle-hard",
+      "title": "Lifecycle respects the actual boundary",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi, it's Omri from Salesforce. Do you have a few minutes to chat?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "No more questions. I need to leave."
+          }
+        ]
+      },
+      "manual_review": "Expected closing or ended. Use conversational intent and exact buyer evidence; do not grade sales performance."
+    },
+    {
+      "id": "persistence-lifecycle-settled",
+      "title": "Lifecycle respects the actual boundary",
+      "kind": "lifecycle",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "accountContext": {
+          "company": "Example Retail",
+          "person": "Alex",
+          "products": "Service Cloud (user provided)",
+          "entries": [
+            {
+              "id": "pain",
+              "kind": "hypothesis",
+              "purpose": "pain",
+              "text": "Order exceptions may still require repetitive manual work."
+            }
+          ]
+        },
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I'll send the summary today."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Thanks. That's all I need. Goodbye."
+          }
+        ]
+      },
+      "manual_review": "Expected ended. Use conversational intent and exact buyer evidence; do not grade sales performance."
+    }
+  ]
+}

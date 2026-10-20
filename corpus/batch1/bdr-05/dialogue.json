@@ -1,0 +1,30 @@
+[
+  {
+    "speaker": "seller",
+    "text": "Hey Alex, Omri at Salesforce. Calling because I saw your company has been expanding the field organization pretty aggressively. I had a question about how the sales operation is handling that growth."
+  },
+  {
+    "speaker": "buyer",
+    "text": "You're probably calling the wrong person. I run finance."
+  },
+  {
+    "speaker": "seller",
+    "text": "Yeah, sounds like I probably am. Who worries about how the reps actually operate day to day?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "That's Jenna, our VP of Sales Ops."
+  },
+  {
+    "speaker": "seller",
+    "text": "Got it. Is it okay if I mention you pointed me her way?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Sure."
+  },
+  {
+    "speaker": "seller",
+    "text": "Appreciate it. I'll leave you alone."
+  }
+]

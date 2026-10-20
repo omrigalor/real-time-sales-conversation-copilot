@@ -1,0 +1,38 @@
+[
+  {
+    "speaker": "seller",
+    "text": "Hi Daniel, Omri from Salesforce. I know you weren't expecting me. Mind if I give you the twenty-second reason I called?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Sure, but we're not buying anything this quarter."
+  },
+  {
+    "speaker": "seller",
+    "text": "Understood. I'm not calling to change that. I saw you're opening twelve new locations and wondered whether the service operation is scaling with that growth or whether you're adding people alongside it."
+  },
+  {
+    "speaker": "buyer",
+    "text": "We're adding people. That's the plan."
+  },
+  {
+    "speaker": "seller",
+    "text": "Got it. So this may simply not be an issue right now."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Honestly, probably not."
+  },
+  {
+    "speaker": "seller",
+    "text": "Fair enough. I'll get out of your hair. If that starts becoming painful as the locations come online, would it be alright if I circle back later in the year?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Sure."
+  },
+  {
+    "speaker": "seller",
+    "text": "Great. Thanks, Daniel."
+  }
+]

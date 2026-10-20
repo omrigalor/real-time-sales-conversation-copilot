@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "purpose": "Fixed development-only cross-mode probes. Never included in production prompts or training libraries. Inspect manually, no scores.",
+  "cases": [
+    {
+      "id": "bdr-attention-speakerphone",
+      "title": "BDR: speakerphone shared judgment",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "trainingMode": "speakerphone",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Unexpected outbound call. The supplied research is a tentative service-cost signal, not a diagnosed cause.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "This is Omri from Salesforce. I had a quick thought about the service team."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "I have maybe twenty seconds. What is it?"
+          }
+        ]
+      },
+      "manual_review": "Inspect relevance and proportionate effort. No broad diagnostic work or forced meeting. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "bdr-attention-assisted",
+      "title": "BDR: assisted shared judgment",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "assisted",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Unexpected outbound call. The supplied research is a tentative service-cost signal, not a diagnosed cause.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "This is Omri from Salesforce. I had a quick thought about the service team."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "I have maybe twenty seconds. What is it?"
+          }
+        ]
+      },
+      "manual_review": "Inspect relevance and proportionate effort. No broad diagnostic work or forced meeting. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "bdr-attention-blind",
+      "title": "BDR: blind shared judgment",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "blind",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Unexpected outbound call. The supplied research is a tentative service-cost signal, not a diagnosed cause.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "This is Omri from Salesforce. I had a quick thought about the service team."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "I have maybe twenty seconds. What is it?"
+          }
+        ]
+      },
+      "manual_review": "Inspect relevance and proportionate effort. No broad diagnostic work or forced meeting. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "bdr-attention-observe",
+      "title": "BDR: observe shared judgment",
+      "kind": "observe",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "observe",
+        "salesRole": "BDR",
+        "scenarioId": "target-service",
+        "context": "Unexpected outbound call. The supplied research is a tentative service-cost signal, not a diagnosed cause.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "This is Omri from Salesforce. I had a quick thought about the service team."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "I have maybe twenty seconds. What is it?"
+          }
+        ]
+      },
+      "manual_review": "Inspect relevance and proportionate effort. No broad diagnostic work or forced meeting. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "ae-discovery-purpose-speakerphone",
+      "title": "AE: speakerphone shared judgment",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "trainingMode": "speakerphone",
+        "salesRole": "AE",
+        "scenarioId": "ae-discovery",
+        "context": "Scheduled initial discovery. The buyer accepted a discussion of delivery investigations; operational details are not yet known.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Good to meet you, Maya."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Hi. We have half an hour. Where should we start?"
+          }
+        ]
+      },
+      "manual_review": "Inspect shared purpose and useful agenda. No cold-call permission ritual or immediate workflow dump. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "ae-discovery-purpose-assisted",
+      "title": "AE: assisted shared judgment",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "assisted",
+        "salesRole": "AE",
+        "scenarioId": "ae-discovery",
+        "context": "Scheduled initial discovery. The buyer accepted a discussion of delivery investigations; operational details are not yet known.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Good to meet you, Maya."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hi. We have half an hour. Where should we start?"
+          }
+        ]
+      },
+      "manual_review": "Inspect shared purpose and useful agenda. No cold-call permission ritual or immediate workflow dump. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "ae-discovery-purpose-blind",
+      "title": "AE: blind shared judgment",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "blind",
+        "salesRole": "AE",
+        "scenarioId": "ae-discovery",
+        "context": "Scheduled initial discovery. The buyer accepted a discussion of delivery investigations; operational details are not yet known.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Good to meet you, Maya."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hi. We have half an hour. Where should we start?"
+          }
+        ]
+      },
+      "manual_review": "Inspect shared purpose and useful agenda. No cold-call permission ritual or immediate workflow dump. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "ae-discovery-purpose-observe",
+      "title": "AE: observe shared judgment",
+      "kind": "observe",
+      "payload": {
+        "mode": "simulation",
+        "trainingMode": "observe",
+        "salesRole": "AE",
+        "scenarioId": "ae-discovery",
+        "context": "Scheduled initial discovery. The buyer accepted a discussion of delivery investigations; operational details are not yet known.",
+        "repName": "Omri",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Good to meet you, Maya."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hi. We have half an hour. Where should we start?"
+          }
+        ]
+      },
+      "manual_review": "Inspect shared purpose and useful agenda. No cold-call permission ritual or immediate workflow dump. Compare principles across environments, not exact wording."
+    },
+    {
+      "id": "live-inferred-speakers",
+      "title": "Live Inferred Speakers",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "A real unexpected call; speaker identities must be inferred from this dialogue.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "unassigned",
+            "speakerSource": "unknown",
+            "text": "Hi, Omri calling from Salesforce. I had a thought about order lookups."
+          },
+          {
+            "id": "t1",
+            "speaker": "unassigned",
+            "speakerSource": "unknown",
+            "text": "I own service operations. We occasionally check the carrier site, but it is fine for us."
+          }
+        ]
+      },
+      "manual_review": "Infer seller then buyer. Do not inflate occasional lookups into major pain or urgency."
+    },
+    {
+      "id": "live-ae-product-question",
+      "title": "Live Ae Product Question",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Scheduled technical evaluation. No pricing, architecture or savings are confirmed.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "We can look at connecting the case workspace to the order system."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "How would that actually work with Service Cloud?"
+          }
+        ]
+      },
+      "manual_review": "Answer the direct product question with grounded capabilities and limits, not another generic discovery question."
+    },
+    {
+      "id": "live-ae-agreement",
+      "title": "Live Ae Agreement",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Commercial follow-up. No purchase is yet approved.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I can send the scoped proposal for your procurement review tomorrow."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Yes, send it tomorrow. I will review it with procurement on Thursday."
+          }
+        ]
+      },
+      "manual_review": "Close naturally; do not re-sell the proposal, re-confirm agreement or invent purchase commitment."
+    },
+    {
+      "id": "live-seller-awaits-buyer",
+      "title": "Live Seller Awaits Buyer",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Live call; the seller just asked a question and the buyer has not replied.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Order lookups can be annoying."
+          },
+          {
+            "id": "t1",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "What tends to make them annoying?"
+          }
+        ]
+      },
+      "manual_review": "WAIT. Do not coach the buyer or supply a fabricated buyer answer."
+    }
+  ]
+}

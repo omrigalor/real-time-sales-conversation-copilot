@@ -1,0 +1,24 @@
+{
+  "label": "Exact working configuration immediately before Batch 1 incorporation",
+  "date": "2026-09-28",
+  "limitations": "Includes ongoing conversational/role improvements. Not the older installed 1.0.8 release. No git repository is present. This snapshot was made before adding the six-example library.",
+  "sha256": {
+    "api.js": "2354c49353b318f2bcfee78ab226d9098745f256878059d066cded2a72f7a216",
+    "sales-conversation.js": "5d86f26adc8888fa5451d5a62f490557ebc18c1b6f62d1f83ffc383ecbdc368c",
+    "sales-roles.js": "926c1d9d217ef4782861af2861ffe527725a00430080fc05b85e5cead79bcdaf",
+    "sales-knowledge.js": "91e7aa5110e24579cdd045b0cf678c77859b749da58cc964e7a460333d14d414",
+    "product-catalog.js": "150ecaa43d1da7580bcc243517d3750ce1055a530859705818bbd06e8ca7338b",
+    "buyer-scenarios.js": "0f6c7dd81f9754699de0957e64ba6a20d81f90172fa2b606985a06c20bfbb8e4",
+    "coach-output.js": "458e7c1768be90192eba4ff87e2ec2f3fd5fd792060478ef1a0eb320748a3613",
+    "conversation-memory.js": "8131075b624c7aab514672724e393c41dc7f99b3db3deb4f1185fd311c944f9d",
+    "reminders.js": "4c29b01f9d1e63e98e94d429e7660e548c0bf89e7201672a46e6c6aafb995d23",
+    "opportunity.js": "f1597c179de3ffb47ff4d3774c5e9c760b5ed1d9e5629490ebf0831caa086771",
+    "progress.js": "ecbde325f4f588695db0dc313837379c95058d90bc6c63694a749d03723e824c",
+    "speakerphone-policy.js": "796079d675bea3a30a65194d4b5ac7a6be6bb56ef7f5e260a185ebaebdf0a3f4",
+    "app/scenarios.js": "412172709098f36122e6c1c57b4ae2016a6f9f27bb4f5bbd3596b1e28ca4f2b4",
+    "knowledge/universal.json": "83daac85c75cdf243639be5978e53e3c7a4d8a33ed713a087581b66ae21636cd",
+    "knowledge/bdr.json": "22c2fbfed06e872e052ab693172bcfb96537feb73378d7375155de1a4f3da65d",
+    "knowledge/ae.json": "aab9cbebb3dec939bd7aafe91ac3d5ac4478770deadba885ccb2929640ac0bbc",
+    "knowledge/bdr-batch1.json": "e3da0a7c199e89586f22e32a028bcc46c33743ce68abedbf38a4e7dc085e421a"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "enabled": true,
+  "kind": "user_provided_synthetic_batch",
+  "batch": "batch1",
+  "evidence_limit": "Six synthetic conversations from one source; no causal or real-world success claim. Role-specific supporting judgment only.",
+  "principles": [
+    {
+      "id": "adapt-to-attention",
+      "category": "robust within batch",
+      "principle": "When attention is limited, reduce buyer effort and establish concise relevance before requesting discovery.",
+      "support": [
+        "bdr-01",
+        "bdr-02"
+      ],
+      "contrast": [
+        "bdr-04"
+      ],
+      "exceptions": "A scheduled or unexpectedly engaged conversation can warrant depth; brevity alone does not create relevance.",
+      "confidence": "low empirical confidence; provisional support within this synthetic batch"
+    },
+    {
+      "id": "test-do-not-manufacture",
+      "category": "robust within batch",
+      "principle": "Treat a problem hypothesis as revisable; respect low significance and consider a graceful exit when evidence does not justify pursuit.",
+      "support": [
+        "bdr-02",
+        "bdr-03",
+        "bdr-06"
+      ],
+      "contrast": [
+        "bdr-04"
+      ],
+      "exceptions": "Strong new evidence warrants pursuing the opportunity; this is not a bias toward passivity.",
+      "confidence": "low empirical confidence; provisional support within this synthetic batch"
+    },
+    {
+      "id": "follow-buyer-thread",
+      "category": "robust within batch",
+      "principle": "Follow the concrete thread the buyer supplies; alternate useful statements, answers and questions rather than expanding into a diagnostic checklist.",
+      "support": [
+        "bdr-03",
+        "bdr-06"
+      ],
+      "contrast": [
+        "bdr-04"
+      ],
+      "exceptions": "A broader question can be useful when the actual context calls for it.",
+      "confidence": "low empirical confidence; provisional support within this synthetic batch"
+    },
+    {
+      "id": "proportional-next-action",
+      "category": "context dependent",
+      "principle": "Match the next action to the evidence and buyer permission: a scoped conversation, written follow-up, referral or clean exit can each be appropriate. Once agreed, finish naturally.",
+      "support": [
+        "bdr-01",
+        "bdr-02",
+        "bdr-03",
+        "bdr-05"
+      ],
+      "contrast": [
+        "bdr-04"
+      ],
+      "exceptions": "Conditional permission is not a booked meeting. Referral evidence comes from only one example.",
+      "confidence": "low empirical confidence; provisional support within this synthetic batch"
+    },
+    {
+      "id": "address-real-resistance",
+      "category": "context dependent",
+      "principle": "Understand what resistance is about before choosing an answer, hypothesis, question or exit; an installed product and an email request carry context, not a universal rebuttal.",
+      "support": [
+        "bdr-01",
+        "bdr-06"
+      ],
+      "contrast": [
+        "bdr-04"
+      ],
+      "exceptions": "Email may be interest, a boundary or dismissal; do not assume one or make contact-detail collection mandatory.",
+      "confidence": "low empirical confidence; provisional support within this synthetic batch"
+    }
+  ]
+}

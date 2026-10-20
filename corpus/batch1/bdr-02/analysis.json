@@ -1,0 +1,78 @@
+{
+  "analyst": "Codex qualitative analysis; not an API evaluation",
+  "turns": [
+    {
+      "turn": 0,
+      "context": "No prior engagement",
+      "seller_objective": "Earn attention",
+      "buyer_signal": "No prior engagement",
+      "possible_moves": [
+        "Brief relevance",
+        "permission request"
+      ],
+      "chosen_move": "Permission request",
+      "buyer_reaction": "Buyer rules out buying this quarter",
+      "lesson": "Timing constraint is information, not an automatic invitation to overcome it.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 2,
+      "context": "Timing resistance but permission exists",
+      "seller_objective": "Test relevance",
+      "buyer_signal": "Timing resistance but permission exists",
+      "possible_moves": [
+        "Test one plausible issue",
+        "acknowledge and exit"
+      ],
+      "chosen_move": "Specific scaling hypothesis",
+      "buyer_reaction": "Buyer says planned staffing is deliberate",
+      "lesson": "The chosen staffing plan is not evidence of pain.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 4,
+      "context": "No dissatisfaction expressed",
+      "seller_objective": "Check interpretation",
+      "buyer_signal": "No dissatisfaction expressed",
+      "possible_moves": [
+        "Tentative statement",
+        "graceful exit"
+      ],
+      "chosen_move": "Tentative no-issue reflection",
+      "buyer_reaction": "Buyer confirms low relevance",
+      "lesson": "Accept disconfirming evidence rather than interrogating until pain appears.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 6,
+      "context": "Buyer sees no current issue",
+      "seller_objective": "Preserve optional future contact",
+      "buyer_signal": "Buyer sees no current issue",
+      "possible_moves": [
+        "Exit",
+        "ask lightweight permission if appropriate"
+      ],
+      "chosen_move": "Optional later follow-up",
+      "buyer_reaction": "Buyer permits it",
+      "lesson": "Graceful exit is useful; future contact request is not always necessary.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 8,
+      "context": "Permission obtained",
+      "seller_objective": "Close",
+      "buyer_signal": "Permission obtained",
+      "possible_moves": [
+        "End"
+      ],
+      "chosen_move": "Brief thanks",
+      "buyer_reaction": "No later reaction supplied",
+      "lesson": "No meeting does not imply poor selling.",
+      "confidence": "low: illustrative, synthetic"
+    }
+  ],
+  "limitations": [
+    "Good selling can end without a meeting. Later follow-up outcome is unknown.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ]
+}

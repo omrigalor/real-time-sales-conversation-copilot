@@ -1,0 +1,64 @@
+{
+  "analyst": "Codex qualitative analysis; not an API evaluation",
+  "turns": [
+    {
+      "turn": 0,
+      "context": "No buyer role confirmed",
+      "seller_objective": "Establish relevance",
+      "buyer_signal": "No buyer role confirmed",
+      "possible_moves": [
+        "Brief reason",
+        "permission"
+      ],
+      "chosen_move": "Growth-based opener",
+      "buyer_reaction": "Buyer says finance is wrong owner",
+      "lesson": "Do not infer role fit from seniority.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 2,
+      "context": "Buyer disclaims responsibility",
+      "seller_objective": "Find appropriate owner",
+      "buyer_signal": "Buyer disclaims responsibility",
+      "possible_moves": [
+        "Accept and exit",
+        "lightweight redirect"
+      ],
+      "chosen_move": "Simple ownership question",
+      "buyer_reaction": "Buyer supplies name",
+      "lesson": "Referral works here; one example does not establish universal effectiveness.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 4,
+      "context": "Name supplied, endorsement not implied",
+      "seller_objective": "Clarify permission",
+      "buyer_signal": "Name supplied, endorsement not implied",
+      "possible_moves": [
+        "Ask attribution permission",
+        "thank and exit"
+      ],
+      "chosen_move": "Permission to mention referral",
+      "buyer_reaction": "Buyer agrees",
+      "lesson": "A name is not automatically endorsement; asking permission is context-dependent.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 6,
+      "context": "Useful redirect achieved",
+      "seller_objective": "End",
+      "buyer_signal": "Useful redirect achieved",
+      "possible_moves": [
+        "Close"
+      ],
+      "chosen_move": "Brief close",
+      "buyer_reaction": "No later reaction supplied",
+      "lesson": "Do not restart irrelevant discovery after objective is complete.",
+      "confidence": "low: illustrative, synthetic"
+    }
+  ],
+  "limitations": [
+    "Referral given; contact or opportunity creation not shown.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ]
+}

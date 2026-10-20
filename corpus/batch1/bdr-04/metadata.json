@@ -1,0 +1,27 @@
+{
+  "id": "bdr-04",
+  "role": "BDR",
+  "call_type": "Cold outbound",
+  "stage": "early-stage",
+  "direction": "outbound",
+  "persona": null,
+  "seniority": null,
+  "company_segment": null,
+  "industry": null,
+  "duration_seconds": null,
+  "supplied_outcome": "Buyer disengages",
+  "result": "unsuccessful",
+  "outcome_known": true,
+  "outcome_scope": "Within synthetic dialogue only; no independently verified real-world outcome",
+  "source": {
+    "kind": "synthetic",
+    "provider": "user",
+    "batch": "batch1",
+    "url": null
+  },
+  "limitations": [
+    "One constructed failure; cannot isolate phrase, question length and relevance effects.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ],
+  "existing_relationship": null
+}

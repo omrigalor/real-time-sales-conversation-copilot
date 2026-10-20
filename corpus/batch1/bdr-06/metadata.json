@@ -1,0 +1,27 @@
+{
+  "id": "bdr-06",
+  "role": "BDR",
+  "call_type": "Cold outbound",
+  "stage": "early-stage",
+  "direction": "outbound",
+  "persona": "VP Sales",
+  "seniority": "VP Sales",
+  "company_segment": null,
+  "industry": null,
+  "duration_seconds": null,
+  "supplied_outcome": "Continued conversation",
+  "result": "mixed",
+  "outcome_known": true,
+  "outcome_scope": "Within synthetic dialogue only; no independently verified real-world outcome",
+  "source": {
+    "kind": "synthetic",
+    "provider": "user",
+    "batch": "batch1",
+    "url": null
+  },
+  "limitations": [
+    "Interest and process detail appear; no next step or deal result is established.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ],
+  "existing_relationship": true
+}

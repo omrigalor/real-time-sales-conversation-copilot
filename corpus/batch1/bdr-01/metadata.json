@@ -1,0 +1,27 @@
+{
+  "id": "bdr-01",
+  "role": "BDR",
+  "call_type": "Cold outbound",
+  "stage": "early-stage",
+  "direction": "outbound",
+  "persona": "VP Customer Experience",
+  "seniority": "VP Customer Experience",
+  "company_segment": "large retailer",
+  "industry": "retail",
+  "duration_seconds": null,
+  "supplied_outcome": "Meeting earned",
+  "result": "successful",
+  "outcome_known": true,
+  "outcome_scope": "Within synthetic dialogue only; no independently verified real-world outcome",
+  "source": {
+    "kind": "synthetic",
+    "provider": "user",
+    "batch": "batch1",
+    "url": null
+  },
+  "limitations": [
+    "Conditional email/follow-up permission; no date or accepted invitation appears.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ],
+  "existing_relationship": true
+}

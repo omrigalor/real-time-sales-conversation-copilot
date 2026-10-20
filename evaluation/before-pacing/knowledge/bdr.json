@@ -1,0 +1,15 @@
+{
+  "kind": "editorial_seed",
+  "role": "bdr",
+  "limitations": "User-specified judgment principles, not empirical transcript findings. Context overrides heuristics.",
+  "principles": [
+    {
+      "id": "qualified-pipeline",
+      "principle": "Create legitimate qualified pipeline and earn an appropriate next step; referral, permission to follow up or disqualification may be useful outcomes."
+    },
+    {
+      "id": "earn-attention",
+      "principle": "Establish relevance before demanding substantial diagnostic effort, while allowing discovery to deepen when interest warrants it."
+    }
+  ]
+}

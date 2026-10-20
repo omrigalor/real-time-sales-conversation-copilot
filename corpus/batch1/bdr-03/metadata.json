@@ -1,0 +1,27 @@
+{
+  "id": "bdr-03",
+  "role": "BDR",
+  "call_type": "Existing-customer expansion",
+  "stage": "early-stage",
+  "direction": "outbound",
+  "persona": "Director Customer Service",
+  "seniority": "Director Customer Service",
+  "company_segment": null,
+  "industry": null,
+  "duration_seconds": null,
+  "supplied_outcome": "Discovery meeting accepted",
+  "result": "successful",
+  "outcome_known": true,
+  "outcome_scope": "Within synthetic dialogue only; no independently verified real-world outcome",
+  "source": {
+    "kind": "synthetic",
+    "provider": "user",
+    "batch": "batch1",
+    "url": null
+  },
+  "limitations": [
+    "Verbal agreement only; attendance or commercial result is unknown.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ],
+  "existing_relationship": true
+}

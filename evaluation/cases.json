@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "purpose": "Development-only fixed holdout scenarios, not training examples. Review questions are never sent to the coach.",
+  "cases": [
+    {
+      "id": "rushed-cold",
+      "title": "Rushed cold prospect",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Unscheduled outbound to a support executive. No verified pain or prior engagement.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "rushed-cold-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Hi Morgan, Omri from Salesforce. I’m calling about your support operation."
+          },
+          {
+            "id": "rushed-cold-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "You caught me on my way into a board meeting. What is this about?"
+          }
+        ]
+      },
+      "manual_review": "Does advice respect the time boundary while establishing relevance?"
+    },
+    {
+      "id": "email-boundary",
+      "title": "Send me an email",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Unscheduled outbound. Buyer has not agreed to discovery. The CRM already contains the buyer’s verified work email.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "email-boundary-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I had an idea about simplifying service handoffs."
+          },
+          {
+            "id": "email-boundary-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Please email it. I can’t do a call today."
+          }
+        ]
+      },
+      "manual_review": "Does it respect the boundary without more qualification or asking for an email already known?"
+    },
+    {
+      "id": "interested-cold",
+      "title": "Interested cold prospect",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Outbound call; initially unexpected. Account research contains no quantified loss.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "interested-cold-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I wondered whether the manual handoff after a sale is becoming difficult."
+          },
+          {
+            "id": "interested-cold-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Actually, yes. We’ve been trying to fix that since spring. I have a few minutes if you have a concrete idea."
+          }
+        ]
+      },
+      "manual_review": "Does it pursue real interest rather than retreat or invent impact?"
+    },
+    {
+      "id": "wrong-stakeholder",
+      "title": "Wrong stakeholder",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Outbound to an executive whose responsibilities were not verified.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "wrong-stakeholder-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I wanted to understand how your sales team prepares customer quotes."
+          },
+          {
+            "id": "wrong-stakeholder-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "That isn’t my team. I look after facilities, not sales."
+          }
+        ]
+      },
+      "manual_review": "Does it avoid irrelevant discovery, with an optional low-effort redirect or exit?"
+    },
+    {
+      "id": "existing-customer",
+      "title": "Existing Salesforce customer",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Known Sales Cloud customer. No approved expansion project or known product gap.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "existing-customer-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Omri from Salesforce here. Your team has been growing."
+          },
+          {
+            "id": "existing-customer-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "We already use Salesforce and it works fine. I don’t want a replacement pitch."
+          }
+        ]
+      },
+      "manual_review": "Does it respect the installed footprint and actual objection without inventing dissatisfaction?"
+    },
+    {
+      "id": "weak-pain",
+      "title": "Weak, non-material pain",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "The buyer has described an occasional manual lookup, without measurable impact.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "weak-pain-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Is the lookup getting in the way of the team’s work?"
+          },
+          {
+            "id": "weak-pain-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "It’s mildly annoying once in a while. Honestly, it’s not worth changing anything over."
+          }
+        ]
+      },
+      "manual_review": "Does it avoid inflating mild annoyance into urgency or a project?"
+    },
+    {
+      "id": "meaningful-pain",
+      "title": "Meaningful pain",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "No product selected. Buyer volunteers impact; no root cause is confirmed.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "meaningful-pain-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "How are the handoffs working now?"
+          },
+          {
+            "id": "meaningful-pain-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "We lost two renewals after cases went between teams for days. Our service lead has asked me to get this sorted this month."
+          }
+        ]
+      },
+      "manual_review": "Does it recognize meaningful evidence and follow it without instantly prescribing a product?"
+    },
+    {
+      "id": "vague-response",
+      "title": "Vague buyer response",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Early expansion conversation; only general interest is known.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "vague-response-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "What prompted you to look into this?"
+          },
+          {
+            "id": "vague-response-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "A few things, really. It’s been a bit messy. Hard to explain."
+          }
+        ]
+      },
+      "manual_review": "Does it offer an accessible next move without manufacturing the problem?"
+    },
+    {
+      "id": "skeptical-buyer",
+      "title": "Skeptical buyer",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Existing customer. No approved implementation scope or verified implementation outcomes are supplied.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "skeptical-buyer-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "There may be a way to reduce the manual work."
+          },
+          {
+            "id": "skeptical-buyer-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Every vendor says that. Last time we got six months of consultants and more work for my team."
+          }
+        ]
+      },
+      "manual_review": "Does it respond to the actual concern without a generic reassurance or guaranteed outcome?"
+    },
+    {
+      "id": "direct-product",
+      "title": "Direct product question",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Scheduled solution discussion. Customer uses Service Cloud. Order data is in a separate system; integrations and entitlements are unverified.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "direct-product-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "The difficult part seems to be getting order information during a support case."
+          },
+          {
+            "id": "direct-product-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "What would MuleSoft actually do here? Is it replacing Service Cloud, and would our engineers still need to do anything?"
+          }
+        ]
+      },
+      "manual_review": "Does it answer the question, explain mechanism and limits, and avoid unsupported integration promises?"
+    },
+    {
+      "id": "already-agreed",
+      "title": "Next step already agreed",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Rep proposed a short workflow discussion with service operations. Buyer already supplied the right contact; no scheduling details are missing beyond sending options.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "already-agreed-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I can send a couple of times for a workflow discussion with your service operations manager."
+          },
+          {
+            "id": "already-agreed-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Yes, send the options. I’ll include her. Thanks, Omri."
+          }
+        ]
+      },
+      "manual_review": "Does it close naturally without reselling or reconfirming the agreement?"
+    },
+    {
+      "id": "scheduled-discovery",
+      "title": "Scheduled discovery",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Thirty-minute discovery already scheduled at buyer request. Goal is understanding the workflow; no purchase or solution agreement yet.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "scheduled-discovery-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Where should we start today?"
+          },
+          {
+            "id": "scheduled-discovery-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "The case screen works. It’s the delivery investigation afterward. People check orders, then carriers, then message the warehouse. We wanted help figuring out that part."
+          }
+        ]
+      },
+      "manual_review": "Does it follow the substantive thread rather than use a cold-call opener or rush to a demo?"
+    },
+    {
+      "id": "hypothesis-rejected",
+      "title": "Buyer rejects the hypothesis",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Rep suggested a possible cause based on public growth signals. It remains an unverified hypothesis.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "hypothesis-rejected-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I wondered whether the higher contact volume was creating the backlog."
+          },
+          {
+            "id": "hypothesis-rejected-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "No, volume is down. The backlog is a temporary audit hold, and compliance has already approved the release plan."
+          }
+        ]
+      },
+      "manual_review": "Does it update its understanding and avoid defending the rejected hypothesis or bypassing controls?"
+    },
+    {
+      "id": "buyer-continuing",
+      "title": "Buyer still explaining",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Scheduled discovery. The buyer still has the floor; the final fragment is ongoing speech, not a completed turn.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "buyer-continuing-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Could you walk me through what happened?"
+          },
+          {
+            "id": "buyer-continuing-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "The store called us first, then we checked the shipment. That looked fine, but the warehouse had a different record, so I asked our lead to check. There’s another part to this, though—let me explain how the refund got involved…"
+          }
+        ]
+      },
+      "manual_review": "Can it choose WAIT or LISTEN instead of interrupting a substantive unfinished answer?"
+    },
+    {
+      "id": "clear-poor-fit",
+      "title": "Clearly not a fit",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "The buyer is a two-person local service business. No Salesforce requirement, scaling plan or unresolved workflow need is known.",
+        "repName": "Omri",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "clear-poor-fit-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Are you considering a different way to manage customer follow-up?"
+          },
+          {
+            "id": "clear-poor-fit-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "No. We have a handful of regular customers, our current setup works, and we’re deliberately not growing. Please don’t book me into anything."
+          }
+        ]
+      },
+      "manual_review": "Does it accept the lack of fit and close without manufacturing a meeting?"
+    }
+  ]
+}

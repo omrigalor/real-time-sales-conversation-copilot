@@ -1,0 +1,58 @@
+[
+  {
+    "speaker": "seller",
+    "text": "Priya, Omri from Salesforce. You're already using Service Cloud, so I'm not calling to pitch you on replacing what you have. I noticed your support operation has grown pretty quickly and wanted to ask about one thing."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Okay."
+  },
+  {
+    "speaker": "seller",
+    "text": "When an agent needs information that's outside the case itself, how easy is it for them to actually get it?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Depends. Most things are fine. Orders can be annoying."
+  },
+  {
+    "speaker": "seller",
+    "text": "What makes orders annoying?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "They sometimes need to check our order system and then carrier information. It's not terrible, just clunky."
+  },
+  {
+    "speaker": "seller",
+    "text": "Got it. So I wouldn't call that a crisis."
+  },
+  {
+    "speaker": "buyer",
+    "text": "No, definitely not."
+  },
+  {
+    "speaker": "seller",
+    "text": "But it's repetitive enough that you're noticing it."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Yeah, exactly."
+  },
+  {
+    "speaker": "seller",
+    "text": "That's probably the piece I'd look at before talking about anything broader. Who besides you sees that workflow closely?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Our service operations manager."
+  },
+  {
+    "speaker": "seller",
+    "text": "Would it make sense for the three of us to spend twenty minutes on that exact workflow and see whether there's anything worth fixing?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Yeah, I'd do that."
+  }
+]

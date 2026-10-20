@@ -1,0 +1,109 @@
+{
+  "analyst": "Codex qualitative analysis; not an API evaluation",
+  "turns": [
+    {
+      "turn": 0,
+      "context": "No prior engagement",
+      "seller_objective": "Acknowledge interruption",
+      "buyer_signal": "No prior engagement",
+      "possible_moves": [
+        "Permission request",
+        "concise reason",
+        "exit"
+      ],
+      "chosen_move": "Permission request",
+      "buyer_reaction": "Buyer grants a very short window",
+      "lesson": "A time acknowledgment must change behavior; permission is one valid opener, not mandatory.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 2,
+      "context": "Buyer is rushed",
+      "seller_objective": "Establish relevance",
+      "buyer_signal": "Buyer is rushed",
+      "possible_moves": [
+        "Short hypothesis",
+        "concise relevance",
+        "stop"
+      ],
+      "chosen_move": "Relevant context before discovery",
+      "buyer_reaction": "Buyer asks for hypothesis",
+      "lesson": "Buyer curiosity may justify elaboration; claimed research must actually be supplied.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 4,
+      "context": "Buyer requests it",
+      "seller_objective": "Test a hypothesis",
+      "buyer_signal": "Buyer requests it",
+      "possible_moves": [
+        "Tentative mechanism",
+        "direct answer"
+      ],
+      "chosen_move": "Falsifiable operational hypothesis",
+      "buyer_reaction": "Buyer partly confirms, questions significance",
+      "lesson": "Partial confirmation is not proof of urgency.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 6,
+      "context": "Issue exists but materiality unknown",
+      "seller_objective": "Bound the next step",
+      "buyer_signal": "Issue exists but materiality unknown",
+      "possible_moves": [
+        "Explore significance",
+        "offer scoped check",
+        "exit"
+      ],
+      "chosen_move": "Proportional workflow check",
+      "buyer_reaction": "Buyer asks about participants",
+      "lesson": "A narrow review may be reasonable; asking if material could also be valid.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 8,
+      "context": "Buyer asks who",
+      "seller_objective": "Clarify participants",
+      "buyer_signal": "Buyer asks who",
+      "possible_moves": [
+        "Answer directly"
+      ],
+      "chosen_move": "Role-based participants with practical purpose",
+      "buyer_reaction": "Buyer asks for written material",
+      "lesson": "Request for email is ambiguous, not a booking.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 10,
+      "context": "Buyer wants information first",
+      "seller_objective": "Agree conditional follow-up",
+      "buyer_signal": "Buyer wants information first",
+      "possible_moves": [
+        "Send concise note",
+        "offer conditional follow-up",
+        "stop"
+      ],
+      "chosen_move": "Brief note and conditional meeting ask",
+      "buyer_reaction": "Buyer says that is fine",
+      "lesson": "Could also send the note without a meeting ask; stated outcome overstates calendar certainty.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 12,
+      "context": "Conditional permission secured",
+      "seller_objective": "End cleanly",
+      "buyer_signal": "Conditional permission secured",
+      "possible_moves": [
+        "Acknowledge and end"
+      ],
+      "chosen_move": "Short close",
+      "buyer_reaction": "No later reaction supplied",
+      "lesson": "Do not reopen the request; downstream success is unknown.",
+      "confidence": "low: illustrative, synthetic"
+    }
+  ],
+  "limitations": [
+    "Conditional email/follow-up permission; no date or accepted invitation appears.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ]
+}

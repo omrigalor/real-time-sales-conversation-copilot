@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "extends": "cases.json (original 15 unchanged)",
+  "purpose": "Additional held-out pacing/disclosure cases, not a training batch. Manual review prompts never enter model inputs.",
+  "cases": [
+    {
+      "id": "buyer-cold-disclosure",
+      "title": "Buyer: simple unexpected call, limited invitation",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "context": "Unexpected first call. Buyer has only heard a request for a moment.",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "buyer-cold-disclosure-0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hello, Rachel speaking."
+          },
+          {
+            "id": "buyer-cold-disclosure-1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Hi Rachel, Omri at Salesforce. Have you got a moment?"
+          }
+        ],
+        "scenarioId": "cedar-onboarding"
+      },
+      "manual_review": "Does the buyer respond to the attention request without unloading pains, causes, unknown metrics and a stakeholder? Variation is fine; no fact-count threshold or required phrase."
+    },
+    {
+      "id": "buyer-invited-detail",
+      "title": "Buyer: scheduled conversation invites detail",
+      "kind": "buyer",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "repName": "Omri",
+        "context": "Buyer has agreed to a scheduled discovery conversation and is invited to explain what they know.",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "buyer-invited-detail-0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hi Omri. I’ve set aside some time for this."
+          },
+          {
+            "id": "buyer-invited-detail-1",
+            "speaker": "seller",
+            "speakerSource": "native",
+            "text": "Thanks for making the time. Could you walk me through the delivery investigation issue your managers raised and what you know about it?"
+          }
+        ],
+        "scenarioId": "ae-discovery"
+      },
+      "manual_review": "Can a willing buyer offer useful connected detail without becoming artificially terse? Does uncertainty remain proportionate to actual knowledge? This is a counterexample to a universal brevity rule."
+    },
+    {
+      "id": "mention-not-invitation",
+      "title": "Stakeholder knowledge boundary, no invitation",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "context": "Unexpected expansion call to a logistics leader. No concrete consequential problem or project has been established.",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "mention-not-invitation-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Does the dispatch handoff ever create extra work?"
+          },
+          {
+            "id": "mention-not-invitation-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Occasionally, I suppose. Our planning lead knows the details better than I do."
+          }
+        ]
+      },
+      "manual_review": "Does the coach distinguish a knowledge boundary from permission for a meeting? Could a useful statement, modest clarification or respectful exit fit better? No mandatory next move."
+    },
+    {
+      "id": "explicit-invitation",
+      "title": "Buyer explicitly invites stakeholder involvement",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "context": "Unscheduled call has become engaged. Buyer supplies a consequential problem and an explicit invitation.",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "explicit-invitation-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "It may be worth understanding the dispatch handoff."
+          },
+          {
+            "id": "explicit-invitation-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "It is. Missed handoffs are delaying priority deliveries every week. I want you to look at this with Dana, our planning lead. Could the three of us talk Thursday?"
+          }
+        ]
+      },
+      "manual_review": "Can the coach accept and clarify useful logistics without forcing more qualification? Do not manufacture a delay merely to avoid early meetings."
+    },
+    {
+      "id": "early-opener-effort",
+      "title": "Opening: executive interruption, no diagnosis requested",
+      "kind": "opening",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "context": "A first unexpected expansion call. No prior substantive dialogue or confirmed buyer pain.",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "early-opener-effort-0",
+            "speaker": "buyer",
+            "speakerSource": "native",
+            "text": "Hello, Rachel speaking."
+          }
+        ],
+        "scenarioId": "cedar-onboarding",
+        "opening": true
+      },
+      "manual_review": "Does the new opener establish an honest reason to engage without asking the executive to diagnose a broad business metric? Before-pacing column must show the actual old UI opener, not a guessed old model answer."
+    },
+    {
+      "id": "explicit-redirect",
+      "title": "Clear early redirect without full discovery",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Omri",
+        "context": "Cold outbound to a person who explicitly redirects the seller. No agreement or endorsement beyond the stated permission.",
+        "goal": "next_step",
+        "turns": [
+          {
+            "id": "explicit-redirect-0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I was calling about support operations."
+          },
+          {
+            "id": "explicit-redirect-1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "That belongs to Lena now. Please contact her directly—you can say I pointed you to her. I’m not involved in that anymore."
+          }
+        ]
+      },
+      "manual_review": "Can the coach accept the redirect and close without demanding a problem statement or automatically proposing a joint meeting? Referral permission is not a confirmed appointment."
+    }
+  ]
+}

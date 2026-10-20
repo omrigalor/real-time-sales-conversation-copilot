@@ -1,0 +1,109 @@
+{
+  "analyst": "Codex qualitative analysis; not an API evaluation",
+  "turns": [
+    {
+      "turn": 0,
+      "context": "Existing Service Cloud footprint",
+      "seller_objective": "Establish account relevance",
+      "buyer_signal": "Existing Service Cloud footprint",
+      "possible_moves": [
+        "Acknowledge footprint",
+        "one relevant observation"
+      ],
+      "chosen_move": "Clarifies expansion scope",
+      "buyer_reaction": "Buyer permits discussion",
+      "lesson": "Respect owned tools without implying dissatisfaction.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 2,
+      "context": "Permission but no specific pain",
+      "seller_objective": "Find a relevant thread",
+      "buyer_signal": "Permission but no specific pain",
+      "possible_moves": [
+        "Targeted question",
+        "useful hypothesis"
+      ],
+      "chosen_move": "Narrow workflow question",
+      "buyer_reaction": "Buyer mentions orders",
+      "lesson": "Follow buyer language rather than switch to a checklist.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 4,
+      "context": "Buyer calls orders annoying",
+      "seller_objective": "Understand the clue",
+      "buyer_signal": "Buyer calls orders annoying",
+      "possible_moves": [
+        "Clarify meaning",
+        "tentative reflection"
+      ],
+      "chosen_move": "Short follow-up",
+      "buyer_reaction": "Buyer describes checking systems",
+      "lesson": "Incremental information beats demanding a complete diagnosis.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 6,
+      "context": "Buyer says clunky, not terrible",
+      "seller_objective": "Calibrate significance",
+      "buyer_signal": "Buyer says clunky, not terrible",
+      "possible_moves": [
+        "Respect severity",
+        "clarify impact carefully"
+      ],
+      "chosen_move": "Low-severity statement",
+      "buyer_reaction": "Buyer agrees",
+      "lesson": "Do not inflate mild friction.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 8,
+      "context": "Annoyance confirmed, scale unknown",
+      "seller_objective": "Test recurrence",
+      "buyer_signal": "Annoyance confirmed, scale unknown",
+      "possible_moves": [
+        "Tentative statement",
+        "ask frequency",
+        "pause"
+      ],
+      "chosen_move": "Repetition hypothesis",
+      "buyer_reaction": "Buyer confirms",
+      "lesson": "Statement can invite elaboration, but recurrence was a hypothesis until confirmed.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 10,
+      "context": "Recurring workflow with limited detail",
+      "seller_objective": "Find useful participant",
+      "buyer_signal": "Recurring workflow with limited detail",
+      "possible_moves": [
+        "Ask owner",
+        "deepen workflow",
+        "summarize briefly"
+      ],
+      "chosen_move": "Workflow focus plus stakeholder question",
+      "buyer_reaction": "Buyer names service operations manager",
+      "lesson": "A relevant stakeholder question can serve handoff; not every call needs one.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 12,
+      "context": "Buyer identified recurrence and owner",
+      "seller_objective": "Earn scoped next step",
+      "buyer_signal": "Buyer identified recurrence and owner",
+      "possible_moves": [
+        "Offer review",
+        "explore significance more"
+      ],
+      "chosen_move": "Focused three-person review",
+      "buyer_reaction": "Buyer agrees",
+      "lesson": "Agreement supports a next step, not ROI or a purchase prediction.",
+      "confidence": "low: illustrative, synthetic"
+    }
+  ],
+  "limitations": [
+    "Verbal agreement only; attendance or commercial result is unknown.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ]
+}

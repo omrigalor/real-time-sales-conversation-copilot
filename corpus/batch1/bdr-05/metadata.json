@@ -1,0 +1,27 @@
+{
+  "id": "bdr-05",
+  "role": "BDR",
+  "call_type": "Cold outbound / wrong stakeholder",
+  "stage": "early-stage",
+  "direction": "outbound",
+  "persona": "Finance executive",
+  "seniority": "Finance executive",
+  "company_segment": null,
+  "industry": null,
+  "duration_seconds": null,
+  "supplied_outcome": "Referral permission",
+  "result": "successful",
+  "outcome_known": true,
+  "outcome_scope": "Within synthetic dialogue only; no independently verified real-world outcome",
+  "source": {
+    "kind": "synthetic",
+    "provider": "user",
+    "batch": "batch1",
+    "url": null
+  },
+  "limitations": [
+    "Referral given; contact or opportunity creation not shown.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ],
+  "existing_relationship": null
+}

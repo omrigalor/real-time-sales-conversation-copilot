@@ -1,0 +1,27 @@
+{
+  "id": "bdr-02",
+  "role": "BDR",
+  "call_type": "Cold outbound",
+  "stage": "early-stage",
+  "direction": "outbound",
+  "persona": "COO",
+  "seniority": "COO",
+  "company_segment": null,
+  "industry": null,
+  "duration_seconds": null,
+  "supplied_outcome": "No meeting; permission for later follow-up",
+  "result": "mixed",
+  "outcome_known": true,
+  "outcome_scope": "Within synthetic dialogue only; no independently verified real-world outcome",
+  "source": {
+    "kind": "synthetic",
+    "provider": "user",
+    "batch": "batch1",
+    "url": null
+  },
+  "limitations": [
+    "Good selling can end without a meeting. Later follow-up outcome is unknown.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ],
+  "existing_relationship": null
+}

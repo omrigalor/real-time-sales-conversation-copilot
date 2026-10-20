@@ -1,0 +1,96 @@
+{
+  "analyst": "Codex qualitative analysis; not an API evaluation",
+  "turns": [
+    {
+      "turn": 0,
+      "context": "Existing customer",
+      "seller_objective": "Acknowledge installed footprint",
+      "buyer_signal": "Existing customer",
+      "possible_moves": [
+        "Clarify relevance without replacement assumption"
+      ],
+      "chosen_move": "States existing relationship",
+      "buyer_reaction": "Buyer rejects generic pitch",
+      "lesson": "Owned product is not an objection to be mechanically overcome.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 2,
+      "context": "Buyer dislikes generic pitch",
+      "seller_objective": "Explain actual reason",
+      "buyer_signal": "Buyer dislikes generic pitch",
+      "possible_moves": [
+        "Specific hypothesis",
+        "exit",
+        "direct clarification"
+      ],
+      "chosen_move": "Tentative manual-work hypothesis",
+      "buyer_reaction": "Buyer asks for example",
+      "lesson": "Interest follows relevance here, but the account research is synthetic.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 4,
+      "context": "Buyer asks in what sense",
+      "seller_objective": "Answer request",
+      "buyer_signal": "Buyer asks in what sense",
+      "possible_moves": [
+        "Concrete example",
+        "concise explanation"
+      ],
+      "chosen_move": "Examples with uncertainty acknowledged",
+      "buyer_reaction": "Buyer names manual research",
+      "lesson": "Answer the question before returning to discovery.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 6,
+      "context": "Buyer confirms manual research",
+      "seller_objective": "Follow specific thread",
+      "buyer_signal": "Buyer confirms manual research",
+      "possible_moves": [
+        "Ask process",
+        "reflect",
+        "pause"
+      ],
+      "chosen_move": "Narrow process question",
+      "buyer_reaction": "Buyer names three sources",
+      "lesson": "Discovery deepens after relevant engagement.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 8,
+      "context": "Several sources named",
+      "seller_objective": "Check interpretation",
+      "buyer_signal": "Several sources named",
+      "possible_moves": [
+        "Brief statement",
+        "clarify effort",
+        "pause"
+      ],
+      "chosen_move": "Short reflection",
+      "buyer_reaction": "Buyer agrees",
+      "lesson": "A statement may suffice; do not force another question.",
+      "confidence": "low: illustrative, synthetic"
+    },
+    {
+      "turn": 10,
+      "context": "One process detail confirmed",
+      "seller_objective": "Maintain focus",
+      "buyer_signal": "One process detail confirmed",
+      "possible_moves": [
+        "Pause",
+        "test significance",
+        "focused reflection"
+      ],
+      "chosen_move": "Limits scope to that thread",
+      "buyer_reaction": "No later reaction supplied",
+      "lesson": "Continued conversation is not proof of a material opportunity.",
+      "confidence": "low: illustrative, synthetic"
+    }
+  ],
+  "limitations": [
+    "Interest and process detail appear; no next step or deal result is established.",
+    "Six constructed examples from one supplied batch, not six independent empirical sources."
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "speaker": "seller",
+    "text": "Chris, Omri from Salesforce. I know you already use us. This isn't a call asking whether you want a CRM."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Good, because we definitely don't need another Salesforce pitch."
+  },
+  {
+    "speaker": "seller",
+    "text": "Fair. The reason I called is that teams can be heavy Salesforce users and still have parts of the selling process happening manually outside it. I saw how quickly your sales org is growing and wondered whether that's happening for you."
+  },
+  {
+    "speaker": "buyer",
+    "text": "In what sense?"
+  },
+  {
+    "speaker": "seller",
+    "text": "Things like reps researching accounts or pulling together information before outreach. I'm not assuming that's a problem for you."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Research is actually pretty manual."
+  },
+  {
+    "speaker": "seller",
+    "text": "Interesting. Where does the rep usually start?"
+  },
+  {
+    "speaker": "buyer",
+    "text": "Usually Salesforce, LinkedIn, then a couple internal sources."
+  },
+  {
+    "speaker": "seller",
+    "text": "So there's some jumping around."
+  },
+  {
+    "speaker": "buyer",
+    "text": "Yeah."
+  },
+  {
+    "speaker": "seller",
+    "text": "That's the thread I'd want to understand. Not your whole sales stack."
+  }
+]

@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "description": "Development-only fixed probes; never training inputs. No numerical quality grading.",
+  "cases": [
+    {
+      "id": "grounded-product-question",
+      "title": "Buyer asks what Service Cloud actually does",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Scheduled discovery; no integration architecture has been established.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "You mentioned customer cases are spread across inboxes."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Yes. What would Service Cloud actually do for the agents?"
+          }
+        ]
+      },
+      "manual_review": "Does it answer with supported capabilities, avoid a discovery reflex, and attach only relevant product basis?"
+    },
+    {
+      "id": "unsupported-technical-guarantee",
+      "title": "Buyer asks for an unsupported security guarantee",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Technical evaluation; the available product library has no customer-specific contract or architecture.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Can you guarantee every copy of our data stays in our private German cloud, including every AI subprocess and backup?"
+          }
+        ]
+      },
+      "manual_review": "Does it avoid inventing contractual or technical guarantees and suggest confirming the specific requirement?"
+    },
+    {
+      "id": "buyer-unfinished-thought",
+      "title": "Buyer is still developing an answer",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Live partial thought. Buyer is still elaborating; no completed conversational handoff.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "What happens after the case comes in?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "First we open the order record, then there is another part to this, because when the carrier has an exception we..."
+          }
+        ]
+      },
+      "manual_review": "Does it HOLD without spoken dialogue? A useful secondary cue is allowed. Do not treat transcript punctuation as the sole evidence."
+    },
+    {
+      "id": "hold-attention-cue",
+      "title": "Space with a useful listening focus",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Buyer has explicitly indicated more explanation is coming.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "There are a few things happening. Let me explain the returns issue first, because the way it changes during busy weeks is important."
+          }
+        ]
+      },
+      "manual_review": "Does HOLD preserve space and optionally direct attention to frequency or impact without creating a third primary action?"
+    },
+    {
+      "id": "older-thread-memory",
+      "title": "Relevant thread outside recent transcript",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "A long discovery meeting. Earlier validated thread is outside the current transcript window.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "We have covered the reporting side."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Was there another part of the agent workflow you wanted to come back to?"
+          }
+        ],
+        "conversationMemory": {
+          "threads": [
+            {
+              "id": "carrier-thread",
+              "kind": "known",
+              "topic": "workflow",
+              "summary": "Delivery exceptions require checking the carrier portal.",
+              "quote": "checking the carrier portal",
+              "speaker": "buyer",
+              "turnId": "early-4",
+              "status": "open"
+            }
+          ]
+        }
+      },
+      "manual_review": "Does it remember the earlier carrier lookup without inventing its frequency, impact or urgency?"
+    },
+    {
+      "id": "hypothesis-not-fact",
+      "title": "Account research must not override the buyer",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "I wondered whether higher online volume was adding service pressure."
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Actually the service team is doing fine. We added capacity already."
+          }
+        ],
+        "accountContext": {
+          "company": "Fictional Evaluation Retailer",
+          "entries": [
+            {
+              "kind": "hypothesis",
+              "text": "Rising ecommerce volume may create service staffing pressure."
+            }
+          ]
+        }
+      },
+      "manual_review": "Does it update from the buyer correction rather than pitching a cost problem as established?"
+    },
+    {
+      "id": "no-unsupported-integration",
+      "title": "Specific connector claim is absent from knowledge",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "AE",
+        "context": "Solution evaluation. No documentation for this fictional system is supplied.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Does it come with a supported connector for our custom WarehouseFox 7.3 order system, or would we need to build one?"
+          }
+        ]
+      },
+      "manual_review": "Does it distinguish general integration capability from an unsupported named/version-specific connector?"
+    },
+    {
+      "id": "earned-ae-handoff",
+      "title": "BDR earned an AE workflow conversation",
+      "kind": "handoff",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Existing customer expansion. Buyer is service director Jordan at a fictional account.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "What makes delivery exceptions awkward?"
+          },
+          {
+            "id": "t1",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Agents check the carrier portal after they open the case. I do not know how often."
+          },
+          {
+            "id": "t2",
+            "speaker": "seller",
+            "speakerSource": "manual",
+            "text": "Would a focused workflow conversation with our AE be useful?"
+          },
+          {
+            "id": "t3",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "Yes, send two times for a conversation with your AE next week. Keep it focused on that lookup."
+          }
+        ],
+        "accountContext": {
+          "company": "Fictional Evaluation Retailer",
+          "person": "Jordan",
+          "buyerRole": "Service director"
+        }
+      },
+      "manual_review": "Does the brief preserve the actual agreement and buyer language, keep frequency unknown, and avoid inventing budget, impact, additional attendees or a purchase?"
+    },
+    {
+      "id": "observable-why",
+      "title": "Why explanation stays tied to what was said",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "context": "Early existing-customer conversation; no quantified impact.",
+        "turns": [
+          {
+            "id": "t0",
+            "speaker": "buyer",
+            "speakerSource": "manual",
+            "text": "The switching is mildly annoying, but our team is comfortable with it and I would not call it a priority."
+          }
+        ]
+      },
+      "manual_review": "Inspect Why: does it cite observable low urgency and avoid invented lost revenue or hidden emotional state?"
+    }
+  ]
+}

@@ -1,0 +1,1560 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "precomputed-cold",
+      "title": "Cold opener prepared before ringing",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [],
+        "opening": true
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "assisted-cold",
+      "title": "Assisted: buyer has only greeted",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "buyer",
+            "text": "Hi, Mark speaking.",
+            "speakerSource": "native"
+          }
+        ],
+        "trainingMode": "assisted"
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "blind-cold",
+      "title": "Blind: same introduction without visible advice",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "buyer",
+            "text": "Hi, Mark speaking.",
+            "speakerSource": "native"
+          }
+        ],
+        "trainingMode": "blind"
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "live-cold",
+      "title": "Speakerphone: real two-speaker introduction",
+      "kind": "coach",
+      "payload": {
+        "mode": "speakerphone",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "seller",
+            "text": "Hello?",
+            "speakerSource": "native"
+          },
+          {
+            "speaker": "buyer",
+            "text": "Yes, Mark speaking.",
+            "speakerSource": "native"
+          }
+        ]
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "observe-cold",
+      "title": "Observe: AI seller first contribution",
+      "kind": "observe",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "buyer",
+            "text": "Hi, Mark speaking.",
+            "speakerSource": "native"
+          }
+        ],
+        "trainingMode": "observe"
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "ae-prospecting",
+      "title": "AE making an unexpected approach",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "buyer",
+            "text": "Hi, Mark speaking.",
+            "speakerSource": "native"
+          }
+        ]
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "scheduled-discovery",
+      "title": "Scheduled AE meeting already has permission",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "AE",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Scheduled discovery, invited by the buyer to discuss loyalty engagement.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "buyer",
+            "text": "Hi, Mark speaking.",
+            "speakerSource": "native"
+          }
+        ],
+        "opening": true
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "invited-reason",
+      "title": "Buyer already invited the reason",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "seller",
+            "text": "Hi Mark, Alex from Salesforce. Is now okay for a quick conversation about repeat purchases?",
+            "speakerSource": "native"
+          },
+          {
+            "speaker": "buyer",
+            "text": "Sure. What did you have in mind?",
+            "speakerSource": "native"
+          }
+        ]
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "direct-question",
+      "title": "Buyer directly asks why the seller called",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Target Corporation",
+          "person": "Mark Weinstein",
+          "buyerRole": "EVP and Chief Marketing and Guest Experience Officer",
+          "industry": "General merchandise retail",
+          "size": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+          "relationship": "Existing Salesforce customer (user provided; public research did not establish exact products).",
+          "products": "Service Cloud (practice assumption, NOT verified). Other products and editions unknown; confirm before a real sales claim.",
+          "callType": "Unexpected outbound. No prior contact or permission.",
+          "objective": "Explore whether guest-experience growth creates a meaningful unmet need; validate the existing stack before proposing an upsell.",
+          "notes": "Research checked September 29, 2026. Company, named executive and sourced facts are real. AI dialogue, temperament, availability and any practice meeting are invented for role-play, not statements by Mark Weinstein. Customer relationship is user provided. Service Cloud ownership is assumed for practice, not publicly verified. No private CRM access. No verified rising guest-service cost claim.",
+          "fieldSources": {
+            "company": {
+              "value": "Target Corporation",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "person": {
+              "value": "Mark Weinstein",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "buyerRole": {
+              "value": "EVP and Chief Marketing and Guest Experience Officer",
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "industry": {
+              "value": "General merchandise retail",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            },
+            "size": {
+              "value": "Approximately 415,000 full-time, part-time and seasonal employees as of January 31, 2026",
+              "source": "https://corporate.target.com/investors/annual/2025-annual-report/10-k-report/10-k-part-i/item-1-business",
+              "sourceTitle": "Target 2025 Form 10-K",
+              "checkedAt": "2026-09-29",
+              "evidence": ""
+            }
+          },
+          "demo": false,
+          "entries": [
+            {
+              "id": "target-growth",
+              "text": "Q2 2026: digital comparable sales grew 8.7%; same-day delivery grew more than 25%. Growth does not establish service friction.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-businesses",
+              "text": "Q2 2026: non-merchandise sales grew 20.1%, with strength in Roundel, Circle 360 and Target Plus.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Target Q2 2026 earnings release",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-progress",
+              "text": "Q2 earnings commentary reported improving inventory reliability and guest satisfaction alongside continued technology investment. Do not pitch a failing operation as fact.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/getmedia/d01cb805-63cb-4150-bae4-8d717f0d9ed3/Q2-2026-Target-Corp-Earnings-Call.pdf",
+              "sourceTitle": "Target Q2 2026 earnings call · Aug 19",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-ai",
+              "text": "Target already offers shopping experiences through Google/Gemini, Microsoft Copilot and OpenAI ChatGPT. Establish what its existing capabilities already solve.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/press/fact-sheet/2026/06/conversational-ai",
+              "sourceTitle": "Target conversational AI fact sheet · Jun 18",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-role",
+              "text": "Mark Weinstein leads marketing, brand, loyalty, guest experience and digital, including Roundel and Target Plus. Detailed operational ownership must still be confirmed.",
+              "kind": "public",
+              "important": true,
+              "source": "https://corporate.target.com/about/leadership-team/mark-weinstein",
+              "sourceTitle": "Target executive biography",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-hypothesis",
+              "text": "Hypothesis: growing delivery and channel variety may create exceptions or context handoffs worth investigating. Frequency, friction and buyer concern are not confirmed.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://corporate.target.com/press/release/2026/08/target-corporation-reports-second-quarter-earnings",
+              "sourceTitle": "Hypothesis prompted by Q2 growth; not a reported workflow problem",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-integration",
+              "text": "Possible fit only if an unmet integration need emerges: MuleSoft can expose APIs and actions to Agentforce. Existing architecture, access, licensing and incremental value need validation.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/mulesoft/agentforce/",
+              "sourceTitle": "Salesforce MuleSoft for Agentforce · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-service",
+              "text": "Possible fit only if a service gap is confirmed: Service Cloud / Agentforce Service capabilities may support service workflows. No claim of Target ownership, implementation fit or cost reduction.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "https://www.salesforce.com/service/cloud/",
+              "sourceTitle": "Salesforce Service Cloud · product basis, not Target fit evidence",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-footprint",
+              "text": "The user identifies Target as an existing Salesforce customer. Service Cloud ownership is an explicit practice assumption, not a researched fact; confirm actual products before proposing an upsell.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-unknown",
+              "text": "Unknown: current CRM/service tools, integration ownership, exception frequency, business impact, urgency, budget and whether existing initiatives already solve the issue.",
+              "kind": "unknown",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            },
+            {
+              "id": "target-discovery",
+              "text": "Worth learning: where guest context is lost, if anywhere; what the team already handles well; whether any remaining gap matters. Select a relevant thread, not a checklist.",
+              "kind": "hypothesis",
+              "important": true,
+              "source": "",
+              "sourceTitle": "",
+              "checkedAt": "2026-09-29"
+            }
+          ]
+        },
+        "turns": [
+          {
+            "speaker": "seller",
+            "text": "Hi Mark, Alex from Salesforce.",
+            "speakerSource": "native"
+          },
+          {
+            "speaker": "buyer",
+            "text": "What are you calling about?",
+            "speakerSource": "native"
+          }
+        ]
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    },
+    {
+      "id": "sparse-account",
+      "title": "No research: do not invent a pain to fill the opener",
+      "kind": "coach",
+      "payload": {
+        "mode": "simulation",
+        "salesRole": "BDR",
+        "repName": "Alex",
+        "accountContext": {
+          "company": "Example Business",
+          "person": "Taylor",
+          "buyerRole": "Operations lead",
+          "callType": "Unexpected outbound",
+          "products": "Unknown"
+        },
+        "turns": [],
+        "opening": true
+      },
+      "manual_review": "Inspect the actual spoken output. For an uninvited cold approach: plain identity if needed, one relevant topic and a small invitation to talk, then stop; no initial diagnostic demand or invented pain. For a scheduled or already invited exchange: answer the actual moment without repeating permission. No exact phrase required."
+    }
+  ]
+}
